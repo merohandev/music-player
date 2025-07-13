@@ -360,20 +360,16 @@ function App() {
       <div className="background-animation"></div>
       <div className="floating-particles">{createParticles()}</div>
       
-      <div className="status-indicator">
-        <div className={`status-dot ${isPlaying ? 'active' : ''}`}></div>
-        <span>{isPlaying ? 'Playing - Live Audio Processing' : 'Ready - Live Audio Processing'}</span>
-      </div>
-
-      <div className="main-title">
-        <h1>🎵 Pro Music Player</h1>
-        <p>Stream and live-tune your demo track</p>
-      </div>
-
       <div className="container">
-        <div className="glow-effect"></div>
+        <div className="main-title">
+          <h1>🎵 Pro Music Player</h1>
+          <p>Stream and live-tune your demo track</p>
+        </div>
         
-        <div className="player-container">
+        <div className="content-wrapper">
+          <div className="glow-effect"></div>
+          
+          <div className="player-container">
           <div className="album-art">
             <div className="music-icon">🎵</div>
           </div>
@@ -571,6 +567,7 @@ function App() {
               <div className="value-display">{eqHigh > 0 ? '+' : ''}{eqHigh}dB</div>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </div>
